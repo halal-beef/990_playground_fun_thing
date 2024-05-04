@@ -15,7 +15,10 @@ extern void board_init(void);
 
 extern void clean_fb(volatile char *fb, int width, int height, int stride);
 extern void printk(char *text);
+extern void printf(char *text);
+extern void print(char *text);
 
 extern void writel(unsigned int value, void* address);
+extern unsigned int readl(void* address);
 
 #endif // MAIN_H_
